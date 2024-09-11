@@ -41,14 +41,13 @@ body{
 
 }
 .front{
-    background-image:url(https://plus.unsplash.com/premium_photo-1661629259850-9a893425f1f5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-size: contain; background-repeat:no-repeat;
+    background-image:url(https://wallpapercave.com/wp/wp11219600.jpg); background-size: cover; background-repeat:no-repeat;
 }
 .container:hover > .front{
     transform: rotateZ(-18deg);
 }
 .back{
-
-    background-image:url(https://images.unsplash.com/photo-1666136242335-6a765f42d3cd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-size: contain; background-repeat:no-repeat;
+    background-image:url(https://static.zerochan.net/Vegeta.full.4182755.jpg); background-size: cover; background-repeat:no-repeat; background-position: -110px 0px;
     transform: rotateY(180deg) ;
     backface-visibility: hidden;
     display: flex;
@@ -56,4 +55,6 @@ body{
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    color: white;
+    -webkit-text-stroke: 1px black; /* 2px black border around text */
 }
