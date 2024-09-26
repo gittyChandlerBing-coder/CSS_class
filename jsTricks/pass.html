@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            background-color: coral;
+            color: black;
+        }
+        .pass{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        i{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="pass">
+        <!-- Password field -->
+        Password: <input type="password" value="FakePSW" id="myInput">
+        <i class="fa fa-eye" style="font-size:48px;color:red"></i>
+
+        <!-- An element to toggle between password visibility -->
+        <br>
+        <input type="checkbox" onclick="myFunction()">Show Password
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
